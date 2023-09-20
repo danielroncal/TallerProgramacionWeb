@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi Carrito</title>
+	<link rel="stylesheet" type="text/css" href="Styles/styleIndex.css">
+</head>
+<body>
+	<header id="header">
+		<div class="search-box">
+			<a href="Index.html"><img src="Images/logo.png" alt="logo"></a>
+			<input type="text" id="search" placeholder="Buscar productos..." onkeydown="handleEnter(event)">
+			<button id="buscar" onclick="buscarProductos()">Buscar</button>
+			<button id="carrito">Mi carrito</button>
+			<button id="cuenta">Mi cuenta</button>
+		</div>
+		<div class="search-box">
+			<select id="category">
+				<option>&#8801; Categorías</option>
+				<option value="televisores">Televisores</option>
+				<option value="smartphones">Smartphones</option>
+				<option value="laptops">Laptops</option>
+				<option value="accesorios">Accesorios</option>
+			</select>
+		</div>
+	</header>
+	
+	<footer>
+		<nav>
+			<a href="#">Contáctanos</a>
+			<a href="#">Nosotros</a>
+		</nav>
+		<br>
+		&copy; 2023 Tienda de Productos Electrónicos
+	</footer>
+	<script src="JavaScript/script.js"></script>
+</body>
+</html>
