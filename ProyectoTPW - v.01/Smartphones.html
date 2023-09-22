@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tienda de Productos Electrónicos</title>
+	<link rel="stylesheet" type="text/css" href="Styles/styleIndex.css">
+	<link rel="icon" href="Images/Icon.jpg">
+</head>
+<body>
+	<header id="header">
+		<div class="search-box">
+			<a href="Index.html"><img src="Images/Logo.jpg" alt="logo"></a>
+			<input type="text" id="search" placeholder="Buscar productos..." onkeydown="handleEnter(event)">
+			<button id="buscar" onclick="buscarProductos()">Buscar</button>
+			<button id="carrito">Mi carrito</button>
+			<button id="cuenta">Mi cuenta</button>
+		</div>
+		<div class="search-box">
+			<select id="category">
+				<option>&#8801; Categorías</option>
+				<option value="televisores">Televisores</option>
+				<option value="smartphones">Smartphones</option>
+				<option value="laptops">Laptops</option>
+				<option value="tablets">Tablets</option>
+			</select>
+		</div>
+	</header>
+	<div class="container-product">
+		<div class="product">
+			<figure><img src="Images/Smartphone1.jpg" alt="Producto"></figure>
+			<h2>Apple iPhone 11</h2>
+			<p>6.1" 64GB 12MP + 12MP - Blanco</p>
+			<p>Precio: S/3,199</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product">
+			<figure><img src="Images/Smartphone2.jpg" alt="Producto"></figure>
+			<h2>Apple iPhone 13</h2>
+			<p>6.1" 128GB 12MP + 12MP - Azul Medianoche</p>
+			<p>Precio: S/4,399</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product">
+			<figure><img src="Images/Smartphone3.jpg" alt="Producto"></figure>
+			<h2>Apple iPhone 14 Pro</h2>
+			<p>6.1" 128GB 48MP + 12MP + 12MP Negro Espacial</p>
+			<p>Precio: S/6,299</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product">
+			<figure><img src="Images/Smartphone4.jpg" alt="Producto"></figure>
+			<h2>Samsung Galaxy S23 Ultra 5G</h2>
+			<p>256gb 12gb ram dual Sim Verde</p>
+			<p>Precio: S/3,979</p>
+			<button>Agregar al Carrito</button>
+		</div>
+	</div>
+	<footer>
+		<nav>
+			<a href="#">Contáctanos</a>
+			<a href="#">Nosotros</a>
+		</nav>
+		<br>
+		&copy; 2023 Tienda de Productos Electrónicos
+	</footer>
+	<script src="JavaScript/script.js"></script>
+</body>
+</html>
