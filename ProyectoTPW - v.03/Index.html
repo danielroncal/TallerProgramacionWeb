@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tech Store</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styleGeneral.css">
+	<link rel="stylesheet" type="text/css" href="CSS/styleIndex.css">
+	<link rel="stylesheet" type="text/css" href="CSS/styleProduct.css">
+	<link rel="icon" href="Images/Icon.jpg">
+</head>
+<body>
+	<header id="header">
+		<div class="search-box">
+			<a href="Index.html"><img src="Images/Logo.jpg" alt="logo"></a>
+			<select id="category">
+				<option>&#8801; Categorías</option>
+				<option value="televisores">Televisores</option>
+				<option value="smartphones">Smartphones</option>
+				<option value="laptops">Laptops</option>
+				<option value="tablets">Tablets</option>
+			</select>
+			<input type="text" id="search" placeholder="Buscar productos..." onkeydown="handleEnter(event)">
+			<button id="buscar" onclick="buscarProductos()">Buscar</button>
+			<button id="carrito">Mi carrito</button>
+			<button id="cuenta">Mi cuenta</button>
+		</div>
+	</header>
+	<div class="container-slideshow">
+		<div class="slides fade"><img src="Images/Laptop1.jpg" alt="Slider1" style="width:100%"></div>
+		<div class="slides fade"><img src="Images/Tablet1.jpg" alt="Slider2" style="width:100%"></div>
+		<div class="slides fade"><img src="Images/Televisor1.jpg" alt="Slider3" style="width:100%"></div>
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+	<h2 class="most">Los más vendidos:</h2>
+	<div class="container-product">
+		<div class="product">
+			<figure><img src="Images/Televisor2.jpg" alt="Producto"></figure>
+			<h2>Televisor Samsung Smart TV</h2>
+			<p>75" Crystal UHD 4K UN75CU8000GXPE (Nuevo)</p>
+			<p>Precio: S/3,099</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product">
+			<figure><img src="Images/Laptop3.jpg" alt="Producto"></figure>
+			<h2>Apple MacBook Air</h2>
+			<p>13" Chip M1 8GB RAM 256 GB SSD - Space Gray</p>
+			<p>Precio: S/3,999</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product">
+			<figure><img src="Images/Smartphone3.jpg" alt="Producto"></figure>
+			<h2>Apple iPhone 14 Pro</h2>
+			<p>6.1" 128GB 48MP + 12MP + 12MP Negro Espacial</p>
+			<p>Precio: S/6,299</p>
+			<button>Agregar al Carrito</button>
+		</div>
+
+		<div class="product hidden-product">
+			<figure><img src="Images/Smartphone1.jpg" alt="Producto"></figure>
+			<h2>Apple iPhone 11</h2>
+			<p>6.1" 64GB 12MP + 12MP - Blanco</p>
+			<p>Precio: S/3,199</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product hidden-product">
+			<figure><img src="Images/Laptop1.jpg" alt="Producto"></figure>
+			<h2>Laptop Asus </h2>
+			<p>Intel Core i5 12GB 512SSD 11° Gen 15.6"</p>
+			<p>Precio: S/1,999</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product hidden-product">
+			<figure><img src="Images/Televisor1.jpg" alt="Producto"></figure>
+			<h2>Televisor LG</h2>
+			<p>55" LG OLED 4K ThinQ AI OLED55C3PSA (2023)</p>
+			<p>Precio: S/5,199</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product hidden-product">
+			<figure><img src="Images/Tablet1.jpg" alt="Producto"></figure>
+			<h2>Samsung Galaxy Tab S7 FE</h2>
+			<p>128GB - 12.4" Plateado</p>
+			<p>Precio: S/1,899</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product hidden-product">
+			<figure><img src="Images/Laptop2.jpg" alt="Producto"></figure>
+			<h2>Gamer Acer</h2>
+			<p>Intel Core i5 RTX 3050 4GB 8GB 512 GB SSD Nitro 11° Gen 15.6''</p>
+			<p>Precio: S/2,999</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product hidden-product">
+			<figure><img src="Images/Smartphone2.jpg" alt="Producto"></figure>
+			<h2>Apple iPhone 13</h2>
+			<p>6.1" 128GB 12MP + 12MP - Azul Medianoche</p>
+			<p>Precio: S/4,399</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product hidden-product">
+			<figure><img src="Images/Televisor3.jpg" alt="Producto"></figure>
+			<h2>Android TV BGH</h2>
+			<p>65" 4K UHD</p>
+			<p>Precio: S/1,699</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product hidden-product">
+			<figure><img src="Images/Tablet2.jpg" alt="Producto"></figure>
+			<h2>iPad Wi-Fi</h2>
+			<p>64GB (10ma Gen) - Plata</p>
+			<p>Precio: S/2,199</p>
+			<button>Agregar al Carrito</button>
+		</div>
+		<div class="product hidden-product">
+			<figure><img src="Images/Smartphone4.jpg" alt="Producto"></figure>
+			<h2>Samsung Galaxy S23 Ultra 5G</h2>
+			<p>256gb 12gb ram dual Sim Verde</p>
+			<p>Precio: S/3,979</p>
+			<button>Agregar al Carrito</button>
+		</div>
+	</div>
+	<footer>
+		<nav>
+			<a href="https://wa.me/1XXXXXXXXXX"><img src="Images/WhatsApp.png"></a>
+			<a href="https://www.facebook.com/"><img src="Images/Facebook.png"></a>
+			<a href="https://www.twitter.com/"><img src="Images/Twitter.png"></a>
+			<a href="https://www.instagram.com/"><img src="Images/Instagram.png"></a>
+			<br><br>
+			<a href="https://wa.me/1XXXXXXXXXX">Contáctanos +51 --- --- ---</a>
+		</nav>
+		<br>
+		&copy; Tech Store. Todos los derechos reservados.
+	</footer>
+	<script src="JavaScript/script.js"></script>
+	<script src="JavaScript/scriptSliderIndex.js"></script>
+</body>
+</html>

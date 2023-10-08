@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi Cuenta</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styleGeneral.css">
+	<link rel="stylesheet" type="text/css" href="CSS/styleCuenta.css">
+	<link rel="icon" href="Images/Icon.jpg">
+</head>
+<body>
+	<header id="header">
+		<div class="search-box">
+			<a href="Index.html"><img src="Images/Logo.jpg" alt="logo"></a>
+			<select id="category">
+				<option>&#8801; Categorías</option>
+				<option value="televisores">Televisores</option>
+				<option value="smartphones">Smartphones</option>
+				<option value="laptops">Laptops</option>
+				<option value="tablets">Tablets</option>
+			</select>
+			<input type="text" id="search" placeholder="Buscar productos..." onkeydown="handleEnter(event)">
+			<button id="buscar" onclick="buscarProductos()">Buscar</button>
+			<button id="carrito">Mi carrito</button></a>
+			<button id="cuenta">Mi cuenta</button>
+		</div>
+	</header>
+
+<table>
+        <tr>
+           <th   colspan="1">
+                <img src="Images/Login.jpg" alt="Imagen" width="850" height="750">
+            </th>
+            <td style="width: 50%; " >
+		     <div class="container">   
+		        <div class=".Cuadro-Login">
+		            <h2 >Iniciar Sesión</h2>
+		            <form name= "frmIniciar">
+		                <div class="textbox">
+		                    <i class="fas fa-user"></i>
+		                   <p align="left">Ingrese Usuario: </p>
+		                   
+		                    <input type="text"  placeholder="Usuario" name="txtUsu"   required />
+		                </div>
+		                <div class="textbox">
+		                    <i class="fas fa-lock"></i>
+
+		                    <p align="left">Ingrese Contraseña: </p>
+		                    <input type="password" placeholder="Contraseña" name="txtContra" required>
+		                    
+
+		                </div>
+		                <button type="submit" class="btn">Iniciar Sesión</button>
+		            </form>
+		             <p>¿No tienes una cuenta? Registrate <a href="Registro.html">aquí</a></p>
+		        </div>
+		    </div>
+			</div>  		
+                
+            </td>
+        </tr>
+    </table>
+
+ 	 
+
+
+
+	<footer>
+		<nav>
+			<a href="https://wa.me/1XXXXXXXXXX"><img src="Images/WhatsApp.png"></a>
+			<a href="https://www.facebook.com/"><img src="Images/Facebook.png"></a>
+			<a href="https://www.twitter.com/"><img src="Images/Twitter.png"></a>
+			<a href="https://www.instagram.com/"><img src="Images/Instagram.png"></a>
+			<br><br>
+			<a href="https://wa.me/1XXXXXXXXXX">Contáctanos +51 --- --- ---</a>
+		</nav>
+		<br>
+		&copy; Tech Store. Todos los derechos reservados.
+	</footer>
+
+</body>
+</html>
