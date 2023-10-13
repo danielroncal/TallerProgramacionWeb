@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tech Store | Mi Cuenta</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styleGeneral.css">
+	<link rel="stylesheet" type="text/css" href="CSS/styleCuenta.css">
+	<link rel="icon" href="Images/Icon.png">
+</head>
+<body>
+	<div class="container">
+		<img src="Images/Login.jpg" alt="Login">
+		<div class="Login">
+			<h2>Inicio de Sesión</h2>
+			<form name="frmIniciar" method="post">
+				<div class="textbox">
+					<p>Ingrese Usuario:</p>
+					<input type="text" placeholder="Usuario" name="txtUsu" required>
+					<p>Ingrese Contraseña:</p>
+					<input type="password" placeholder="Contraseña" name="txtContra" required>
+				</div>
+				<button type="submit" class="button">Iniciar Sesión</button>
+			</form>
+			<p>¿No tienes una cuenta? <a href="Registro.html">Regístrate aquí</a></p>
+		</div>
+	</div>
+	<div id="message">Inicio de sesión correcto</div>
+	<script src="JavaScript/script.js"></script>
+	<script src="JavaScript/scriptCuenta.js"></script>
+</body>
+</html>

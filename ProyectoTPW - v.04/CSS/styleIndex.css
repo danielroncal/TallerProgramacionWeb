@@ -1,0 +1,86 @@
+.container-slideshow {
+	top: -10px;
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+	text-align: center; /* Centrar horizontalmente el contenido */
+	user-select: none; /*Para que el usuario no pueda seleccionar el texto o elementos*/
+}
+
+.container-slideshow span {
+	margin-top: 10px;
+}
+
+.slides {
+	display: none;
+	max-width: 100%;
+}
+
+.slides img {
+	width: 100%;
+}
+
+.prev, .next {
+	position: absolute;
+	cursor: pointer;
+	top: 35%;
+	width: auto;
+	padding: 16px;
+	color: #000;
+	font-weight: bold;
+	font-size: 28px;
+	transition: 0.5s ease;
+	border-radius: 50%;
+	user-select: none; /*Para que el usuario no pueda seleccionar el texto o elementos*/
+}
+
+.prev {
+	left: 0;
+}
+
+.next {
+	right: 0;
+}
+
+.prev:hover, .next:hover {
+	transition: all 0.5s;
+	transform: scale(1.1);
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #ccc;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.5s ease;
+}
+
+.dot:hover {
+	background-color: #999;
+}
+
+.active {
+	background-color: #555;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+.fade img {
+	max-width: 100%;
+	height: 300px;
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+.most {
+	margin-left: 6%;
+}
